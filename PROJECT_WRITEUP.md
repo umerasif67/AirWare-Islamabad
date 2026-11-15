@@ -13,3 +13,10 @@
 **Limitations.** The training cosine formula omits division by 365.25 and is effectively constant for integer days. The measured experiment is preserved and disclosed; a corrected version has not been evaluated here. The test result informed calendar-feature development, so this is not a final untouched validation set. The gain is modest; no significance or uncertainty estimate was calculated. Sudden spikes remain difficult. Future work includes corrected calendar features, weather inputs, fresh time-based evaluation and ground-station validation.
 
 **Credits.** [Open-Meteo](https://open-meteo.com/en/docs/air-quality-api) and CAMS supply the underlying model-based data; full attribution and provenance limits are in the README. Tools: [scikit-learn](https://scikit-learn.org/stable/), [Streamlit](https://docs.streamlit.io/), [pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/) and [joblib](https://joblib.readthedocs.io/en/stable/). [ChatGPT](https://chatgpt.com/) assisted with project guidance, code/debugging explanations and submission preparation. Codex assisted with repository preparation, checks and documentation.
+**Intended user and impact**
+
+AirWare Islamabad is designed as a research prototype for school administrators in Islamabad who want to explore whether next-day air pollution forecasting could help inform outdoor activity planning. The current system demonstrates historical predictions and is not validated for real-time health decisions.
+
+**Our contribution and model limitations**
+
+We tested whether adding calendar information to a model using recent pollution history improved predictions. The resulting model reduced MAE by approximately 3.83% against the persistence baseline. However, it struggled with sudden pollution changes. For example, for May 30, 2026, it predicted 31.51 µg/m³ against a historical estimate of 56.33 µg/m³. The original cosine feature also contains a documented implementation error.
