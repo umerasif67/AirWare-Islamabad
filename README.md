@@ -1,4 +1,4 @@
-# AirWare Islamabad
+# AirWave Islamabad
 
 Veritas AI hackathon project: a historical next-day PM2.5 prediction experiment for Islamabad, with a Streamlit viewer of held-out predictions. This is a historical demonstration, not a live forecast or a health advisory.
 
