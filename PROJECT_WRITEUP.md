@@ -1,4 +1,4 @@
-# AirWare Islamabad — Veritas AI hackathon write-up
+# AirWave Islamabad — Veritas AI hackathon write-up
 
 **Problem.** Explore whether recent particulate pollution history can predict the next day's PM2.5 daily mean for Islamabad using a small, explainable model.
 
