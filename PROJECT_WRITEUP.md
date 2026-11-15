@@ -19,4 +19,4 @@ AirWare Islamabad is designed as a research prototype for school administrators 
 
 **Our contribution and model limitations**
 
-We tested whether adding calendar information to a model using recent pollution history improved predictions. The resulting model reduced MAE by approximately 3.83% against the persistence baseline. However, it struggled with sudden pollution changes. For example, for May 30, 2026, it predicted 31.51 µg/m³ against a historical estimate of 56.33 µg/m³. The original cosine feature also contains a documented implementation error.
+We tested whether adding calendar information to a model using recent pollution history improved predictions. The resulting model reduced MAE by approximately 3.83% against the persistence baseline. However, it struggled with sudden pollution changes. For example, for May 30, 2026, our calendar-augmented model predicted 31.21 µg/m³ against a historical estimate of 56.33 µg/m³, resulting in an absolute error of approximately 25.12 µg/m³.
